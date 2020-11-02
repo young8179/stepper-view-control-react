@@ -46,13 +46,14 @@ export default class stepper extends Component {
             <div className="container ">
                 <div className="row justify-content-center mt-5">
                     <form action="" >
-                        <button type="button" onClick={this.minus}name="minus">-</button>
-                        <input 
+                        <button className="btn btn-success" type="button" onClick={this.minus}name="minus">-</button>
+                        <input
+                        className="" 
                         type="text" 
                         name="number" 
                         onChange={this.handleChange}
                         value={this.state.number}/>
-                        <button type="button" onClick={this.plus} name="plus">+</button>
+                        <button className="btn btn-success" type="button" onClick={this.plus} name="plus">+</button>
                     </form>
 
                 </div>
